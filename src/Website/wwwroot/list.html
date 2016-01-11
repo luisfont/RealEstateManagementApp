@@ -1,0 +1,21 @@
+﻿<!-- Houses Shown as example -->
+<div class="col-lg-12">
+    <h1 class="page-header">
+        Houses
+    </h1>
+</div>
+<div class="col-md-4" ng-repeat="house in houses">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4><i class="fa fa-fw fa-check"></i> {{house.Title}}</h4>
+        </div>
+        <div class="panel-body">
+            <p>{{house.Description}}</p>
+            <a href="/houses/edit/{{house.Id}}" class="btn btn-default">Edit</a>
+            <a href="/houses/delete/{{house.Id}}" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+</div>
+<p>
+    <a href="/houses/add" class="btn btn-primary">New House</a>
+</p>

@@ -1,0 +1,21 @@
+﻿<h1>Edit House</h1>
+
+<div class="row">
+    <div class="col-md-5">
+
+        <form ng-submit="edit()">
+            <div class="form-group">
+                <label for="Title">House Title</label>
+                <input name="Title" type="text" class="form-control" placeholder="Enter title" ng-model="house.Title">
+            </div>
+            <div class="form-group">
+                <label for="Description">Description</label>
+                <input name="Description" type="text" class="form-control" placeholder="Enter description" ng-model="house.Description">
+            </div>
+            <a href="/" class="btn btn-default">Cancel</a>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+
+
+    </div>
+</div>
